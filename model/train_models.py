@@ -5,7 +5,7 @@ Trains 5 classification models on the Telco Customer Churn dataset,
 evaluates each with Accuracy, AUC, Precision, Recall, F1, and MCC,
 saves the fitted models + preprocessing pipeline + a held-out test
 set (used as the Streamlit app's default demo data), and writes the
-comparison table to model/comparison_table.csv.
+comparison table to model/comparison_table.csv
 
 Models:
   1. Logistic Regression
