@@ -1,31 +1,23 @@
 # Telco Customer Churn — Classification & Deployment
 
-## a. Problem Statement
-Customer churn (a subscriber discontinuing service) is one of the most
-costly problems for telecom companies — acquiring a new customer is far
-more expensive than retaining an existing one. This project builds and
-compares 5 supervised classification models that predict whether a
-telecom customer will churn (`Churn = Yes/No`) based on their
-demographic profile, account information, and subscribed services. The
-best-performing model is deployed as an interactive Streamlit web app
-so evaluators can upload their own test data and see live predictions
-and metrics.
+## 1. Problem Statement
+Customer churn — when subscribers discontinue their service — poses a significant financial challenge for telecom providers, as retaining existing customers is far more cost‑effective than acquiring new ones. This project focuses on developing and evaluating five supervised classification models to predict whether a customer is likely to churn (Churn = Yes/No) using demographic details, account attributes, and service usage information. The most accurate model is then deployed through an interactive Streamlit web application, enabling evaluators to upload test datasets and instantly view predictions along with performance metrics.
 
-## b. Dataset Description
+## 2. Dataset Description
 - **Source:** [IBM Sample Data Sets — Telco Customer Churn](https://www.kaggle.com/blastchar/telco-customer-churn) (public, hosted on GitHub/Kaggle)
 - **Instances:** 7,043 customers
-- **Features:** 19 predictive features (4 numeric, 15 categorical) + 1 target column (`Churn`)
+- **Features:** 19 Predictive Features (4 numeric, 15 categorical) + 1 target column (`Churn`)
   - Demographics: `gender`, `SeniorCitizen`, `Partner`, `Dependents`
   - Account info: `tenure`, `Contract`, `PaperlessBilling`, `PaymentMethod`, `MonthlyCharges`, `TotalCharges`
   - Services: `PhoneService`, `MultipleLines`, `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`
-- **Target:** `Churn` — binary (`Yes` = customer left, `No` = customer stayed). ~26.5% positive class (moderately imbalanced).
+- **Target:** `Churn` — binary (`Yes` = customer left, `No` = customer stayed). ~26.5% Positive class (moderately imbalanced).
 - **Preprocessing:** `TotalCharges` blanks converted to numeric + median-imputed; numeric features standard-scaled; categorical features one-hot encoded; all wrapped in a single `sklearn` `Pipeline`/`ColumnTransformer` so the exact same preprocessing is applied at train and inference time.
 - **Split:** 80% train / 20% stratified test (test set exported as `test_data.csv`, also used as the default sample in the Streamlit app).
 
-## c. GitHub Repository Link
+## 3. GitHub Repository Link
 `<< PASTE YOUR GITHUB REPO URL HERE AFTER YOU PUSH >>`
 
-## d. Models Used
+## 4. Models Used
 
 ### Comparison Table (on held-out 20% test set, 1,409 customers)
 
