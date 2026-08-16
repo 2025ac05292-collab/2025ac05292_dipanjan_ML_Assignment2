@@ -1,11 +1,11 @@
 """
-Streamlit app for the ML Assignment 2 (Telco Customer Churn classification).
+Streamlit app for the ML-Assignment 2 (Telco Customer Churn classification).
 
 Features:
   a. Dataset upload (CSV) — upload your own test data
-  b. Model selection dropdown — choose among the 5 trained models
-  c. Display of evaluation metrics
-  d. Confusion matrix + classification report
+  b. Model Selection Dropdown — choose among the 5 trained models
+  c. Display of Evaluation Metrics
+  d. Confusion Matrix + Classification report
 """
 
 import streamlit as st
@@ -74,7 +74,7 @@ else:
 
 # --- b. Model selection --------------------------------------------------
 st.sidebar.header("2. Model")
-model_name = st.sidebar.selectbox("Choose a classification model", list(MODEL_FILES.keys()))
+model_name = st.sidebar.selectbox("Choose a classification Model", list(MODEL_FILES.keys()))
 
 run_button = st.sidebar.button("Run Evaluation", type="primary")
 

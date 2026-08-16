@@ -1,18 +1,18 @@
 """
 train_models.py
 ----------------
-Trains 5 classification models on the Telco Customer Churn dataset,
-evaluates each with Accuracy, AUC, Precision, Recall, F1, and MCC,
-saves the fitted models + preprocessing pipeline + a held-out test
-set (used as the Streamlit app's default demo data), and writes the
-comparison table to model/comparison_table.csv
+The project builds five supervised classification models on the Telco Customer Churn dataset. Each model is assessed using a comprehensive set of metrics — Accuracy, AUC, Precision, Recall, F1‑score,
+ and Matthews Correlation Coefficient (MCC). To ensure reproducibility and deployment readiness:
+The trained models, along with the preprocessing pipeline, are saved.
+A stratified hold‑out test set is preserved and exported (test_data.csv), serving as the default demo dataset in the Streamlit application.
+A consolidated comparison of all models is generated and stored in model/comparison_table.csv.
 
 Models:
   1. Logistic Regression
   2. Decision Tree Classifier
   3. K-Nearest Neighbor Classifier
   4. Gaussian Naive Bayes
-  5. Random Forest (Ensemble)
+  5. Random Forest(Ensemble)
 """
 
 import pandas as pd
