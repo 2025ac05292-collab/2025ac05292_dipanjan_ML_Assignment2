@@ -15,7 +15,7 @@ Customer churn — when subscribers discontinue their service — poses a signif
 - **Split:** 80% train / 20% stratified test (test set exported as `test_data.csv`, also used as the default sample in the Streamlit app).
 
 ## 3. GitHub Repository Link
-`<< PASTE YOUR GITHUB REPO URL HERE AFTER YOU PUSH >>`
+`<< https://github.com/2025ac05292-collab/2025ac05292_dipanjan_ML_Assignment2 >>`
 
 ## 4. Models Used
 
@@ -67,4 +67,4 @@ streamlit run app.py
 ```
 
 ## Live Streamlit App
-`<< PASTE YOUR DEPLOYED STREAMLIT CLOUD URL HERE >>`
+<< https://2025ac05292.streamlit.app/ >>
