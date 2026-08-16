@@ -156,4 +156,4 @@ meta = {
 with open(os.path.join(HERE, "meta.json"), "w") as f:
     json.dump(meta, f, indent=2)
 
-print("\nAll models trained and saved to model/")
+print("\nAll Models Trained and Saved to Model/")
